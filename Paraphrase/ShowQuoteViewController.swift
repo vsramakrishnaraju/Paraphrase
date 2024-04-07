@@ -22,6 +22,7 @@ class ShowQuoteViewController: UIViewController {
         }
 
         title = quote.author
+        view.backgroundColor = .systemBackground // this will adapte to the dark mode
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareQuote))
 
